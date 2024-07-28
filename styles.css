@@ -1,0 +1,62 @@
+/* IMAGEN DE FONDO */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('images/Universo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* DIV TRANSPARENTE CON DESENFOQUE */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+
+    background: red;
+    border-radius: 20px;
+
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    font-size: 1.2em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
